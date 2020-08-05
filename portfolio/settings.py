@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # My Apps
     'hello_world.apps.HelloWorldConfig',
     'projects.apps.ProjectsConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Moncton'
 
 USE_I18N = True
 
