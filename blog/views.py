@@ -18,7 +18,7 @@ def blog_category(request, category):
     )
     context = {
         "category": category,
-        "posts": posts
+        "posts": posts,
     }
     return render(request, "blog_category.html", context)
 
@@ -38,5 +38,9 @@ def blog_detail(request, pk):
             )
             comment.save()
 
-    context = {"post": post, "comments": comments, "form": form}
+    context = {
+        "post": post,
+        "comments": comments,
+        "form": form,
+    }
     return render(request, "blog_detail.html", context)
